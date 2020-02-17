@@ -1,7 +1,7 @@
 body {
     background-color: rgb(208, 201, 201);
 }
-header{
+header {
     text-align: center;
     background: #f3ecec;
     padding: 10PX;
@@ -13,17 +13,18 @@ header{
     FONT-SIZE: xx-large;
 }
 
-nav ul li a{
+nav ul li a {
     color: black;
     text-decoration: none;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     padding: 0 15px;
 }
 #change {
     color: darkgrey;
+    padding: 10px;
 }
 footer {
 
@@ -31,13 +32,13 @@ footer {
     padding: 2px 23px;
     border: 2px solid #383232;
 }
-main{
+main {
     height: 400px;
     background: #aba1a1;
     margin: 15px 0;
     padding: 23px 23px;
 }
-figure{
+figure {
     float: left;
     width: 290px;
     height: 240px;
@@ -57,5 +58,4 @@ h2 {
 }
 h3 {
     padding: 10px;
-}
 }

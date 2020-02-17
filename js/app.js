@@ -2,9 +2,9 @@
 /* eslint-disable eol-last */
 'use strict';
 
-var name = prompt('whats your name ?');
-alert('Welcome to mustafa site ' + name);
-console.log('the name is = ' + name);
+var yname = prompt('whats your name ?');
+alert('Welcome to mustafa site ' + yname);
+console.log('the name is = ' + yname);
 
 var food = prompt('you like jordanian dishes ?');
 food = food.toLowerCase();
@@ -19,7 +19,7 @@ else {
 }
 console.log('answer ' + food);
 var visit = prompt('you have visit petra ?');
-visit = visit.toLowerCase()
+visit = visit.toLowerCase();
 if (visit === 'yes' || visit === 'y') {
   alert('yes its great place !!');
 }
@@ -31,7 +31,7 @@ else {
 }
 console.log('answer ' + visit);
 var trans = prompt('you like transportation in jordan ?');
-trans = trans.toLowerCase()
+trans = trans.toLowerCase();
 if (trans === 'yes' || trans === 'y') {
   alert('great to hear that !!');
 }
@@ -43,7 +43,7 @@ else {
 }
 console.log('answer ' + trans);
 var pep = prompt('you like jordanian pepole ?');
-pep = pep.toLowerCase()
+pep = pep.toLowerCase();
 if (pep === 'yes' || pep === 'y') {
   alert('great and you are awesome !');
 }
@@ -55,7 +55,7 @@ else {
 }
 console.log('answer ' + trans);
 var trad = prompt('Do you like Arabs traditions? ?');
-trad = trad.toLowerCase()
+trad = trad.toLowerCase();
 if (trad === 'yes' || trad === 'y') {
   alert('thats amazing !');
 }
@@ -67,4 +67,4 @@ else {
 }
 console.log('answer ' + trad);
 
-var thank = alert('thank you for your time ' + name);
+alert('thank you for your time ' + yname);
