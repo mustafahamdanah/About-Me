@@ -8,7 +8,7 @@ var yourmarks = 0;
 
 var yname = prompt('whats your name ?');
 alert('Welcome to mustafa site ' + yname);
-// console.log('the name is = ' + yname);
+
 
 var where = prompt('are you think iam from jordan ?');
 where = where.toLowerCase();
@@ -22,7 +22,7 @@ else if (where === 'no' || where === 'n') {
 else {
   alert('empty !');
 }
-// console.log('answer ' + where);
+
 var visit = prompt('you think iam visit a petra ?');
 visit = visit.toLowerCase();
 if (visit === 'yes' || visit === 'y') {
@@ -35,7 +35,7 @@ else if (visit === 'no' || visit === 'n') {
 else {
   alert('empty !');
 }
-// console.log('answer ' + visit);
+
 var trans = prompt('you think i like transportation in jordan ?');
 trans = trans.toLowerCase();
 if (trans === 'yes' || trans === 'y') {
@@ -48,7 +48,7 @@ else if (trans === 'no' || trans === 'n') {
 else {
   alert('empty !');
 }
-// console.log('answer ' + trans);
+
 var pep = prompt('you think i like jordanian pepole ?');
 pep = pep.toLowerCase();
 if (pep === 'yes' || pep === 'y') {
@@ -61,7 +61,7 @@ else if (pep === 'no' || pep === 'n') {
 else {
   alert('empty !');
 }
-// console.log('answer ' + pep);
+
 var trad = prompt('Do you think i like Arabs traditions? ?');
 trad = trad.toLowerCase();
 if (trad === 'yes' || trad === 'y') {
@@ -74,7 +74,6 @@ else if (trad === 'no' || trad === 'n') {
 else {
   alert('empty !');
 }
-console.log('answer ' + trad);
 
 alert('thank you for your time ' + yname);
 
@@ -88,34 +87,50 @@ for(i =0;i < 3;i++){
     yourmarks = yourmarks + 1;
     break;
   }
-  else if (convertguess <=3 ){
+  else if (convertguess <= 3 ){
     alert(`its close answer`);
-    convertguess = prompt(`Guess the last number from my phone number ?`);
+    convertguess = parseInt( prompt(`Guess the last number from my phone number ?`));
   }else if (convertguess <=9 && convertguess>=5){
     alert(`its high answer`);
-   convertguess = prompt(`Guess the last number from my phone number ?`);
+   convertguess =parseInt( prompt(`Guess the last number from my phone number ?`));
   }
  }
-if (i>=3){
+if (i >= 3){
   alert(`sorry!! my last number is 4`);
  }
 
-var mydishes = [`mansaf`,`pasta`,`flafel`,`shawerma`,`maqloba`,`steak`,`hotdog`];
-alert(`guess whats my favourite dish from these menu in 6 attempts,ok? `);
-var guessdish = prompt(`mansaf,pasta,flafel,shawerma,maqloba,steak,hotdog`);
-guessdish = guessdish.toLowerCase();
+
+
+var mydishes = ['mansaf' ,'flafel','shawerma'];
+var d = 0;
 var j = 0;
-while (j< 5){
-  if (guessdish === mydishes[0]){
-    alert(`ooh!! great job thats correct answer`);
-    yourmarks = yourmarks + 1;
-    break;
-  }else{
-    j = j + 1;
-    guessdish = prompt(`sorry,try again: mansaf,pasta,flafel,shawerma,maqloba,steak,hotdog`);
-  }
-  }
-if (j>=5){
-  alert(`my favourite dish is mansaf ,thank you for your time.`);
+var n = false;
+alert(`you can try guess my favourite dish from 3 in 6 attempts,ok ?`);
+var guessdish = prompt(`lets try whats my favourite dishs?`);
+console.log(guessdish);
+for(j=0 ;j<5;j++){
+  for(d=0;d <mydishes.length;d++){
+    if (guessdish === mydishes[d]){
+      alert(`ooh!! great job thats correct answer`);
+      n=true;
+      yourmarks = yourmarks +1;
+      break;
+    }
 }
-alert(`your marks is = ` + yourmarks);
+if (n===true){
+  break;
+}else{
+  guessdish = prompt(`lets try again?`);
+}
+}
+ if (j>=5){
+   alert(`my favourite dishes is mansaf,flafel,shawerma .thank you for your time.`);
+ }
+ alert(`your marks is = ` + yourmarks);
+
+ // console.log('the name is = ' + yname);
+ // console.log('answer ' + trad);
+ // console.log('answer ' + pep);
+ // console.log('answer ' + trans);
+ // console.log('answer ' + visit);
+ // console.log('answer ' + where);
