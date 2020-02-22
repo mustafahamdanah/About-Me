@@ -1,21 +1,65 @@
 body {
-    background-color: rgb(208, 201, 201);
+    background-color: white;
 }
 header {
+    height: 95px;
     text-align: center;
     background: #f3ecec;
-    padding: 10PX;
+    position: sticky;
+    top: 0;
+    /* padding: 10PX; */
     border: 3px solid #464444;
-    margin: 5px;
+    /* margin: 5px; */
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190625/ourmid/pngtree-black-light-effect-architectural-background-image_262495.jpg);
 }
 #h1color {
-    color: rgb(54, 52, 52);
+    color: rgb(189, 179, 179);;
     FONT-SIZE: xx-large;
+    font-family: fantasy;
+    padding: 10px;
+}
+img {
+    width: 150px;
+    height: 160px;
+    margin: 10px 0 0 150px;
+    border-radius: 100%;
+    border-image-repeat: repeat;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    float: left;
 }
 
+h2 {
+    padding: 10px;
+    font-size: x-large;
+    text-align: center;
+    
+    font-family: cursive;
+}
+
+
+
 nav ul li a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    font-family: fantasy;
+  
+}
+nav ul li a:hover{
+    color: brown;
+}
+
+#aboutme {
+    height: 250px;
+    background-color: #d4cccc;
+}
+
+#p1 {
+    text-align: center;
+    padding: 5px;
+    font-size: medium;
+    line-height: 30px;
+
 }
 
 nav ul li {
@@ -27,47 +71,41 @@ nav ul li {
     padding: 10px;
 }
 footer {
-
+    height: 85px;
     background: #121416;
     padding: 2px 23px;
-    border: 2px solid #383232;
+    border: 3px solid #e6e3e3;
 }
 main {
-    height: 450px;
-    background: #aba1a1;
-    margin: 15px 0;
-    padding: 23px 23px;
+
+    background: #d8cece;
 }
-figure {
-    float: right;
-    width: 300px;
-    height: 240px;
-    padding: 5px;
-    margin: 10px;
-}
-img {
-    float: left;
-    width: 250px;
-    height: 195px;
-    border: 2px solid;
-}
-h2 {
-    padding: 5px;
-    font-size: x-large;
-}
-h3 {
+div ul li {
+    list-style: circle;
+    text-align: center;
     padding: 10px;
 }
-
-section ul li {
-    padding: 5px;
-    list-style: circle;
-    float: left;
-    
+#experience {
+    height: 250px;
+    background-color: #e6d8d8;
+    border: 3px solid gray;
 }
+
+
 ol {
-    list-style: decimal;
-    float: left;
     padding: 50px;
     display: grid;
+    text-align: center;
+}
+#ggg {
+    background-color: #efe5e5;
+}
+li {
+    padding: 5px;
+}
+footer ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #e6d8d8;
+
 }
